@@ -60,5 +60,5 @@ app.get('/api', function (req, res) {
 });
 
 app.listen(3001, function () {
-  console.log('Example app listening on port 3001');
+  console.log('Node server started on port 3001');
 });

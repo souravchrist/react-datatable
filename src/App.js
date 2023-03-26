@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import DataTable from 'react-data-table-component';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {Card,Form,Button} from 'react-bootstrap';
+import './App.css'
 const moment = require('moment');
 
  
@@ -75,7 +76,7 @@ function App() {
        <Card className="text-center">
       <Card.Header>Server side datatable with React,node and MySql</Card.Header>
       <Card.Body>
-        <Form.Control onChange={(e)=>setSearch(e.target.value)} type="text" placeholder="Search" />
+        <Form.Control className="search-text" onChange={(e)=>setSearch(e.target.value)} type="text" placeholder="Search" />
       <DataTable
         columns={columns}
         data={users.results}

@@ -27,6 +27,9 @@
 .App-link {
   color: #61dafb;
 }
+.card-body .form-control{
+  width: 15%
+}
 
 @keyframes App-logo-spin {
   from {
